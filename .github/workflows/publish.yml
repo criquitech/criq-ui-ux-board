@@ -47,6 +47,6 @@ jobs:
           # Defaults to the user or organization that owns the workflow file
           scope: '@criquitech'
       - run: npm ci
-      - run: npm publish
+      - run: npm run release
         env:
           NODE_AUTH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
