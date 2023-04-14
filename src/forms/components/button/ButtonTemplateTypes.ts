@@ -1,8 +1,6 @@
 export enum ButtonTemplateTypes {
-    PRIMARY = 'brand-primary',
-    ALTERNATIVE = 'brand-alternative',
-    FLAT_PRIMARY = 'brand-flat-primary',
-    WITH_INPUT = 'with-input'
+    OUTLINE = 'OUTLINE',
+    FILL = 'FILL'
 }
 
 export enum ButtonType {
@@ -11,7 +9,7 @@ export enum ButtonType {
 }
 
 export enum ButtonSizeTypes {
-    XS = 'xs',
-    MD = 'md',
-    LG = 'lg'
+    XS = 'XS',
+    MD = 'MD',
+    LG = 'LG'
 }

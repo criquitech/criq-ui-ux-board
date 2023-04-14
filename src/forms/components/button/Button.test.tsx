@@ -9,7 +9,7 @@ import { Button } from './Button';
 describe('@components/Button', () => {
     it('Given a normal component call it should render component', () => {
         const component = render(
-            <Button type={ButtonType.BUTTON} template={ButtonTemplateTypes.ALTERNATIVE} size={ButtonSizeTypes.MD}>
+            <Button size={ButtonSizeTypes.MD} template={ButtonTemplateTypes.FILL} type={ButtonType.BUTTON}>
                 My Button
             </Button>
         );

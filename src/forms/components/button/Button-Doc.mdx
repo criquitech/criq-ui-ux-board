@@ -1,0 +1,37 @@
+import { Button } from './Button';
+import { ArgsTable, Description, Meta, Preview, PRIMARY_STORY, Stories, Subtitle, Title } from '@storybook/addon-docs';
+import { ButtonSizeTypes, ButtonTemplateTypes, ButtonType } from './ButtonTemplateTypes';
+
+<Meta title="MDX/Checkbox" component={Button} />
+
+export const Template = (args) => <Button {...args} />;
+
+<Title />
+
+With `MDX`, we can define a story for `Checkbox` right in the middle of our Markdown documentation.
+
+<Subtitle />
+<Description />
+<Preview withToolbar withSource isExpanded>
+    <Button type={ButtonType.BUTTON} template={ButtonTemplateTypes.FILL} size={ButtonSizeTypes.XS}>
+        My button
+    </Button>
+</Preview>
+
+```
+<Button
+    size={ButtonSizeTypes.XS}
+    template={ButtonTemplateTypes.FILL}
+    type={ButtonType.BUTTON}/>
+<Button>
+```
+
+```
+interface IColor {
+    baseColor: string;
+    hoverColor: string;
+}
+```
+
+<ArgsTable story={PRIMARY_STORY} />
+<Stories />
